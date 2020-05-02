@@ -1,8 +1,8 @@
 
 plugins {
     id("com.android.application")
-    kotlin("multiplatform")
-    //id("kotlin-android")
+    //kotlin("multiplatform")
+    id("kotlin-android")
     id("kotlin-android-extensions")
     id("kotlin-kapt")
 }
@@ -44,7 +44,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class.java) {
         jvmTarget = "1.8"
     }
 }
-
+/*
 kotlin {
     targets {
         android()
@@ -67,8 +67,8 @@ kotlin {
         implementation("com.github.pengrad:jdk9-deps:1.0")
 
     }
-}
-/*
+}*/
+
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
     implementation("androidx.core:core-ktx:1.2.0")
@@ -81,6 +81,6 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
     implementation("com.github.pengrad:jdk9-deps:1.0")
 
-}*/
+}
 
 
